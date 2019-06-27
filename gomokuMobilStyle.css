@@ -80,7 +80,7 @@ html body
     text-align: center;
     color: darkred;
     padding-left: 0px;
-    font-size: 1.7em;
+    font-size: 1em;
     
 }
 #buttonZacznij
@@ -88,7 +88,7 @@ html body
     margin: 0 auto;
     display: block;
    width:inherit;
-    font-size: 2em;
+    font-size: 1em;
 }
 #trudnoscNapis
 {
