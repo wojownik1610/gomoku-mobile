@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Gomoku</title>
+        <meta name="description" content="Prosta gra" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <link href="gomokuMobilStyle.css" rel="stylesheet" type="text/css" media="handheld" />
+        <link rel="stylesheet" href="gomokuMobilStyle.css">
+        <script src="gomokuScript.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="logo">
+                <h1>Gomoku, czyli Kółko i Krzyżyk do pięciu!</h1>
+            </div>
+            <div id="info">
+                <div class="nag" id="infoNag"><b>INFORMACJE</b></div>
+                <div class="dane" id="infoDane">
+                    Gomoku to gra logiczno-strategiczna wymyślona w VII wieku p.n.e w Japonii.
+                </div>
+                <div class="nag" id="zasadyNag"><b>Zasady</b></div>
+                <div class="dane" id="zasadyDane">
+                    Gomoku toczy się na planszy o wymiarach 15x15. Gracze kładą na planszy na przemian po jednym kamieniu. Wygrywa osoba, która ustawi dokładnie 5 kamieni w  nieprzerwanej linii. 
+                </div>
+                <div class="nag" id="ciekawostkiNag"><b>Ciekawostki</b></div>
+                <div class="dane" id="ciekawostkiDane">
+                    W roku 2009 Polski reprezentant <b>Artur Tamioła</b> został Indywidualnym mistrzem świata w odmianie Gomoku swap2.<br><br>
+                    W roku 2016 <b>reprezentacja Polski</b> została Drużynowym mistrzem świata w odmianie Gomoku swap2.
+                </div>
+                <div class="nag" id="stronaNag"><b>O stronie</b></div>
+                <div class="dane" id="stronaDane">Strona przeznaczona dla osób średniozaawansowanych, gdyż Komputer nie jest wybitnie inteligentny, co może skutkować, że zaawansowani gracze nie będą mieli problem, alby wygrać każdą partię. Jeżeli jesteś osobą początkującą albo trochę ponad początkującą mam nadzieję, że miło spędzisz czas i nauczysz się nowych umiejętności w Gomoku.
+                <br><br> <b>Stronę można nazwać prostym trenerem osobistym.</b></div>
+            </div>
+            <div id="game"  style="overflow-x:auto;">
+                <table id="tGame"></table>
+            </div>
+            <div id="score" >
+                <div id="wynikNapis" ><b>WYNIK</b></div>
+                <div id="wynikCyfra">0 : 0</div>
+                <div id="wynikKto" >GRACZ : KOMP</div>
+                <div class="wnap" id="wynikNapis5" ><b></b></div>
+                <div class="wcyf" id="wynikCyfra5"></div>
+                <div class="wnap" id="wynikNapis4" ><b></b></div>
+                <div class="wcyf" id="wynikCyfra4"></div>
+                <div class="wnap" id="wynikNapis3" ><b></b></div>
+                <div class="wcyf" id="wynikCyfra3"></div>
+                <div class="wnap" id="wynikNapis1" ><b></b></div>
+                <div class="wcyf" id="wynikCyfra1"></div>
+                <button type="button" onclick="poczatek()" id="buttonZacznij">Zacznij od nowa</button> 
+                <div id="trudnoscNapis"><b>Poziom trudnosci</b></div>
+                <select id="poziomTrudnosci" name="nazwa">
+                    <option value=5>Trudny</option>
+                    <option value=4 selected>Normalny</option>
+                    <option value=3>Łatwy</option>
+                    <option value=1>Dziecinny</option>
+	           </select>
+                <div id="startNapis"><b>Pierwszy ruch</b></div>
+                <select id="startWybor" name="nazwa">
+                    <option value="5">Zawsze Komputer</option>
+                    <option value="4">Zawsze Gracz</option>
+                    <option value="3" selected>Przegrany</option>
+                    <option value="2">Wygrany</option>
+                    <option value="6">Na zmiane</option>
+                    <option value="1">Losowo</option>
+	           </select>
+                <div class="zap" id="zajPolaAkt"></div>
+                <div class="zap" id="zajPolaNajw"></div>
+                <div class="zap" id="zajPolaMin"></div>
+                <div id="guziczki">
+                    <div id="guziczkiNag"><b>Poszczególne ruchy</b></div>
+                    <div id="guziczkiKtory"></div>
+                    <button type="button" onclick="cofanie(-2)" id="button2t">&#9001&#9001</button>
+                    <button type="button" onclick="cofanie(-1)" id="button1t">&#9001</button>
+                    <button type="button" onclick="cofanie(1)" id="button1p">&#9002</button>
+                    <button type="button" onclick="cofanie(2)" id="buttoon2p">&#9002&#9002</button>
+                </div>
+            </div>
+           
+            <div id="footer">
+                &copy 2019 <b>Wszelkie prawa zastrzeżone</b>
+            </div>
+        
+        </div>
+         
+    </body>
+</html>
