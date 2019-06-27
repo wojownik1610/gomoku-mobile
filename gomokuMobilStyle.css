@@ -33,7 +33,7 @@ html body
     background-color: lightgray;
     height: 690px;
     padding-top: 690px;
-    padding: 10px;
+    padding: 20px;
     font-size: 5em;
     overflow-x:auto;
     min-height: auto;
@@ -61,6 +61,10 @@ html body
     text-align: center;
     padding: 20px;
 }
+#tGame
+    {
+        border: solid thick black;
+    }
 #wynikNapis
 {
     clear: both;
@@ -122,18 +126,19 @@ html body
 }
 #guziczkiNag
 {
-    font-size: 0.3em;
+    font-size: 1em;
 }
 .wnap
 {
     height: 20px;
-    font-size: 0.3em;
+    font-size: 1em;
     text-align: center;
 }
 .wcyf
 {
     color: darkred;
-    font-size: 0.3em;
+    padding-top: 0.5em;
+    font-size: 1em;
     text-align: center;
 }
 .zap
@@ -165,7 +170,6 @@ html body
     font-weight: 900;
     color: white;
 }
-
 }
 
 @media (min-width: 1099px){
