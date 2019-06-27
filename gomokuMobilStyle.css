@@ -1,6 +1,9 @@
+@media (max-width: 1099px){
+
 #container
 {
-    width:720px;
+    width: auto;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -14,12 +17,177 @@
 #score
 {
     background-color: lightblue;
+    width:auto;
+    padding: 10px;
+    font-size: 2em;
+  right: 0;
+  bottom: 70%;
+}
+#game
+{
+    background-color: lightgray;
+    height: 690px;
+    padding-top: 690px;
+    padding: 10px;
+    font-size: 5em;
+    overflow-x:auto;
+    min-height: auto;
+    min-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+#info
+{
+     float:inherit;
+    background-color: lightgreen;
+    
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    font-size: 3em;
+   
+}
+#footer
+{
+    clear: both;
+    background-color: black;
+    color: snow;
+    text-align: center;
+    padding: 20px;
+}
+#wynikNapis
+{
+    clear: both;
+    text-align: center;
+    font-size: 2em;
+}
+#wynikCyfra
+{
+    clear: both;
+    text-align: center;
+    color: darkred;
+    padding-left: 8px;
+    font-size: 1.8em;
+}
+#wynikKto{
+    clear: both;
+    text-align: center;
+    color: darkred;
+    padding-left: 0px;
+    font-size: 1.7em;
+    
+}
+#buttonZacznij
+{
+    margin: 0 auto;
+    display: block;
+   width:inherit;
+    font-size: 2em;
+}
+#trudnoscNapis
+{
+        clear: both;
+    text-align: center;
+   font-size: 1em;
+}
+#poziomTrudnosci
+{
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    font-size: 1em;
+}
+#startNapis
+{
+     clear: both;
+    text-align: center;
+    font-size: 1em;
+}
+#startWybor
+{
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    font-size: 1em;
+}
+#guziczki
+{
+    text-align: center;
+}
+#guziczkiNag
+{
+    font-size: 0.3em;
+}
+.wnap
+{
+    height: 20px;
+    font-size: 0.3em;
+    text-align: center;
+}
+.wcyf
+{
+    color: darkred;
+    font-size: 0.3em;
+    text-align: center;
+}
+.zap
+{
+    text-align: center;
+}
+.nag
+{
+    padding-top: 9px;
+    text-align: center;
+    color: brown;
+    font-size: 0.5em;
+}
+.dane
+{
+    font-size: 0.4em;
+}
+.pola
+{
+    clear: both;
+    background-color:cornflowerblue;
+    min-width: 35px;
+    height: 35px;
+
+    border-color: lightgray;
+    border-style: solid;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+
+}
+
+@media (min-width: 1099px){
+    #container
+{
+    width:1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo
+{
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    padding: 15px;
+}
+#score
+{
+    float: left;
+    background-color: lightblue;
     width: 120px;
     min-height: 700px;
     padding: 10px;
 }
 #game
 {
+    float: left;
     background-color: lightgray;
     width: 680px;
     min-height: 680px;
@@ -27,6 +195,7 @@
 }
 #info
 {
+    float: left;
     background-color: lightgreen;
     width: 220px;
     min-height: 700px;
@@ -124,11 +293,10 @@
 }
 .pola
 {
-     float: left;
+
     background-color:cornflowerblue;
     width: 35px;
     height: 35px;
-    border-width: 5px;
     border-color: lightgray;
     border-style: solid;
     font-size: 35px;
@@ -136,3 +304,6 @@
     font-weight: 900;
     color: white;
 }
+}
+
+

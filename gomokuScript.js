@@ -63,12 +63,24 @@ function poczatek(){
                 wybrane[i][j]="P";
             }
             else{
-                const el = document.createElement("div");
+                
+                nazwaG="wiersz"+i;
+                var elG;
+                if(j==0){
+                      elG = document.createElement("tr");
+                    elG.id = nazwaG;
+                    tGame.appendChild(elG);
+                }
+                else{
+                    elG = document.getElementById(nazwaG);
+                }
+                const el = document.createElement("td");
                 el.id = nazwa;
+               // el.textContent="X";
                 el.classList.add("pola");
                 nazwa="wybor("+j+", "+i+");";
                 el.setAttribute( 'onclick', nazwa );
-                game.appendChild(el);
+                elG.appendChild(el);
             }
         }
     }
