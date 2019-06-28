@@ -151,9 +151,12 @@ html body
     text-align: center;
     color: brown;
     font-size: 0.5em;
+    background-color:aquamarine;
+    margin-top: 0.2em;
 }
 .dane
 {
+    display: none;
     font-size: 0.4em;
 }
 .pola
@@ -291,10 +294,13 @@ html body
 }
 .nag
 {
+    display: block;
     padding-top: 9px;
     text-align: center;
+    background-color:aquamarine;
     color: brown;
     font-size: 18px;
+    margin-top: 0.2em;
 }
 .dane
 {
